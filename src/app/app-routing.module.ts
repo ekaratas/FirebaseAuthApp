@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthguardGuard } from './authguard.guard';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: '', loadChildren: () => import('./giris/giris.module').then( m => m.GirisPageModule)},
+  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule), canActivate: [ AuthguardGuard ]},
+  { path: 'login', loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)},
+  { path: 'signup', loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)},
 ];
 
 @NgModule({
