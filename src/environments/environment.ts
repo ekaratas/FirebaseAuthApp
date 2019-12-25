@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyDz9AacV7wHGrsfsb-KVUVqOP8HqLu9ERg',
-    authDomain: 'ionic-firebase-ornek.firebaseapp.com',
-    databaseURL: 'https://ionic-firebase-ornek.firebaseio.com',
-    projectId: 'ionic-firebase-ornek',
-    storageBucket: 'ionic-firebase-ornek.appspot.com',
-    messagingSenderId: '745901059846',
-    appId: '1:745901059846:web:48ca90bc6664a4583f7887'
+    apiKey: 'XXXX',
+    authDomain: 'XXXX',
+    databaseURL: 'XXXX',
+    projectId: 'XXXX',
+    storageBucket: 'XXXX',
+    messagingSenderId: 'XXXX',
+    appId: 'XXXX'
   }
  };
 
